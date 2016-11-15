@@ -50,4 +50,6 @@
         android:background="#cf000f"
         android:text="SISWA"
         android:textColor="#ffffff" />
+
+
 </RelativeLayout>
