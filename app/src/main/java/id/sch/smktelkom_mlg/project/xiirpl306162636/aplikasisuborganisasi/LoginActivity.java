@@ -72,7 +72,7 @@ public class LoginActivity extends AppCompatActivity {
             try {
 
                 // Enter URL address where your php file resides
-                url = new URL("http://172.26.3.186/project_android/login.php");
+                url = new URL("http://192.168.43.106/project_android/login.php");
 
             } catch (MalformedURLException e) {
                 // TODO Auto-generated catch block
