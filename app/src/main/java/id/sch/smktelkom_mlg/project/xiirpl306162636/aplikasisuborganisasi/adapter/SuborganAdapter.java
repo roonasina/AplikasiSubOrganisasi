@@ -1,5 +1,7 @@
 package id.sch.smktelkom_mlg.project.xiirpl306162636.aplikasisuborganisasi.adapter;
 
+import android.content.Context;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,10 +16,13 @@ import id.sch.smktelkom_mlg.project.xiirpl306162636.aplikasisuborganisasi.model.
 
 
 public class SuborganAdapter extends RecyclerView.Adapter<SuborganAdapter.ViewHolder> {
-    ArrayList<Suborgan> suborganList;
 
-    public SuborganAdapter(ArrayList<Suborgan> suborganList) {
+    ArrayList<Suborgan> suborganList;
+    ISuborganAdapter mISuborganAdapter;
+
+    public SuborganAdapter(Context context, ArrayList<Suborgan> suborganList) {
         this.suborganList = suborganList;
+        mISuborganAdapter = (ISuborganAdapter) context;
     }
 
     @Override
@@ -31,7 +36,7 @@ public class SuborganAdapter extends RecyclerView.Adapter<SuborganAdapter.ViewHo
     public void onBindViewHolder(ViewHolder holder, int position) {
         Suborgan suborgan = suborganList.get(position);
         holder.tvJudul.setText(suborgan.judul);
-        holder.ivFoto.setImageDrawable(suborgan.foto);
+        holder.ivFoto.setImageURI(Uri.parse(suborgan.foto));
 
     }
 
@@ -42,6 +47,10 @@ public class SuborganAdapter extends RecyclerView.Adapter<SuborganAdapter.ViewHo
         return 0;
     }
 
+    public interface ISuborganAdapter {
+        void doClick(int pos);
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView ivFoto;
         TextView tvJudul;
@@ -50,6 +59,12 @@ public class SuborganAdapter extends RecyclerView.Adapter<SuborganAdapter.ViewHo
             super(itemView);
             ivFoto = (ImageView) itemView.findViewById(R.id.imageView);
             tvJudul = (TextView) itemView.findViewById(R.id.textViewJudul);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mISuborganAdapter.doClick(getAdapterPosition());
+                }
+            });
         }
     }
 }
