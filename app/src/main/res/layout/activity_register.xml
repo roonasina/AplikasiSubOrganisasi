@@ -42,10 +42,18 @@
             android:layout_height="wrap_content"
             android:text="Jenis Kelamin" />
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButtonL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki" />
+
+        <RadioButton
+            android:id="@+id/radioButtonP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan" />
 
         <TextView
             android:id="@+id/textView3"
@@ -57,40 +65,40 @@
             android:id="@+id/cbbasket"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TSBC(Basket)" />
+            android:text="TSBC" />
 
         <CheckBox
-            android:id="@+id/cbmedsan"
+            android:id="@+id/cbmac"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medsan" />
+            android:text="MAC" />
 
         <CheckBox
-            android:id="@+id/cbpakibra"
+            android:id="@+id/cbmemo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Paskibra" />
+            android:text="MEMO" />
 
         <CheckBox
-            android:id="@+id/checkBox4"
+            android:id="@+id/cbpalwaga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New CheckBox" />
+            android:text="PALWAGA" />
 
         <CheckBox
-            android:id="@+id/checkBox5"
+            android:id="@+id/cbpaskibra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New CheckBox" />
+            android:text="PASKIBRA" />
 
         <CheckBox
-            android:id="@+id/checkBox6"
+            android:id="@+id/cbpustel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New CheckBox" />
+            android:text="PUSTEL" />
 
         <Button
-            android:id="@+id/buttonSiswa"
+            android:id="@+id/buttonDaftar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
