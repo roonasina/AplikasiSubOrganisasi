@@ -22,7 +22,7 @@
         <activity
             android:name=".DefaultIntro"
             android:label="Intro Label"
-            android:theme="@style/FullscreenTheme"/>
+            android:theme="@style/FullscreenTheme" />
         <activity android:name=".SiswaActivity" />
         <activity android:name=".UserProfile" />
         <activity android:name=".LoginActivity" />
@@ -31,7 +31,8 @@
             android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".DaftarActivity" />
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".TampilActivity"></activity>
     </application>
 
 </manifest>
