@@ -19,6 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DefaultIntro"
+            android:label="Intro Label"
+            android:theme="@style/FullscreenTheme"/>
         <activity android:name=".SiswaActivity" />
         <activity android:name=".UserProfile" />
         <activity android:name=".LoginActivity" />
