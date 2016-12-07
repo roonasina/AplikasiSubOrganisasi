@@ -17,8 +17,8 @@
 ![form register](https://cloud.githubusercontent.com/assets/22114056/20958214/011a0216-bc87-11e6-93a5-4ac310179060.JPG)
 ![login](https://cloud.githubusercontent.com/assets/22114056/20958215/011cad04-bc87-11e6-9a36-211c4628287d.JPG)
 
-**NAMA KELOMPOK
+**NAMA KELOMPOK**
 - ANISA' NOOR/06
 - HAMZAH HUMAM /16
-= PRIMA LISTIANTI/26
+- PRIMA LISTIANTI/26
 - WIDIA SATRIA/36
